@@ -1,0 +1,176 @@
+/* 
+# ==========================================================================
+# =====    File           : style.css                                  =====
+# =====    Author         : Flavie MORAUX (moraux.flavie@gmail.com)    =====
+# =====    Created        : 01/05/2025                                 =====
+# =====    Description    : CV web interactif                     	   =====
+# =====    Version        : 1.0.0                                      =====
+# =====    Licencs        : Tous droits réservés                       =====
+# ========================================================================== 
+*/
+
+/* Variables */
+:root {
+    --main-color-txt: #333;
+    --main-color-shadow: rgba(51, 51, 51, 0.125);
+    --main-color-1: #7a6650;
+    --main-color-2: #d8bfa3;
+    --main-color-3: #e0d2c0;
+    --main-color-4: #f5e6d3;
+    --main-color-5: #fffaf0;
+}
+
+/* Format A4 */
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    body {
+        margin: 0;
+        -webkit-print-color-adjust: exact;
+    }
+    .personal-info i,
+    .contact i {
+        display: none !important;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Général */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 11pt;
+    background: var(--main-color-5);
+    color: var(--main-color-txt);
+}
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+h2 {
+    font-size: 14px;
+    margin: 25px 0 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--main-color-4);
+    padding-bottom: 5px;
+}
+h3 {
+    font-size: 12px;
+    margin: 10px 0 5px;
+}
+
+/* Colonne de gauche */
+.left {
+    padding: 20px;
+    width: 30%;
+    background-color: var(--main-color-4);
+}
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+}
+.section {
+    margin-bottom: 30px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+.contact p, .personal-info p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.contact i, .personal-info i {
+    color: var(--main-color-1);
+    background: var(--main-color-3);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+.contact p:hover i, .personal-info  p:hover i {
+  background-color: var(--main-color-2);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* Colonne de droite */
+.right {
+    padding: 20px;
+    width: 68%;
+    background-color: var(--main-color-5);
+}
+.header {
+    background-color: var(--main-color-2);
+    padding: 15px 20px;
+    box-shadow: 0 0.5em 0.5em var(--main-color-shadow);
+}
+.header h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 13px;
+    margin: 5px 0 0;
+}
+.experience > h2{
+    margin: 10px 0px 10px 0px;
+}
+.experience, .skills {
+    padding: 5px 20px 5px 20px;
+}
+.experience-item, .experience-item > p {
+    margin-bottom: 10px;
+}
+.experience-item ul {
+    padding-left: 18px;
+    margin-top: 5px;
+}
+.experience-item ul li {
+    margin-bottom: 4px;
+}
+.skills > h2{
+    margin: 10px 0px 10px 0px;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}    
+.skill-name {
+    font-weight: bold;
+}
+.progress-bar {
+    display: flex;
+    gap: 2px;
+    margin-top: 4px;
+}
+.progress-bar span {
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    background: var(--main-color-4);
+    box-shadow: 0 0.5em 0.5em var(--main-color-shadow);
+}
+.progress-bar .filled {
+    background: var(--main-color-2);
+}

@@ -1,0 +1,119 @@
+{
+  "file": "config.json",
+  "author": "MORAUX Flavie",
+  "created": "2025-05-01",
+  "description": "CV web interactif",
+  "version": "1.0.0",
+  "license": "Tous droits réservés",
+
+    "informations":{
+        "picture": "./images/picture_default.png",
+        "name": "Flavie MORAUX",
+        "title": "Architecte Logiciel et Infrastructure SIG",
+        "presentation":  "Ingénieure spécialisée en SIG et développement logiciel, je combine géographie et informatique pour apporter des solutions innovantes à des projets complexes et sensibles. Ma polyvalence et mon expertise m'assurent de m'adapter aisément aux défis variés.",
+        "telephone": "**.**.**.**.**",
+        "email": "***",
+        "city": "***",
+        "birth": "***",
+        "nationality": "***",
+        "languages": "Anglais intermédiaire",
+        "github": "github.com/fmoraux"
+    },
+    "formations": [
+        {
+          "year": "2007",
+          "university": "Université Paris 6 / ENSG",
+          "degree": "MASTER INFORMATIQUE APPLIQUÉ AUX SIG"
+        },
+        {
+          "year": "2006",
+          "university": "Université Rennes 2",
+          "degree": "MASTER SIG ET AMÉNAGEMENT DU TERRITOIRE"
+        },
+        {
+          "year": "2005",
+          "university": "Université Nancy 2",
+          "degree": "LICENCE PRO CRÉATION ET ADMINISTRATION DES SIG"
+        }
+    ],
+    "competences": [
+        { 
+            "name": "SIG : ArcGIS, QGIS, GDAL", 
+            "level": 100 
+        },
+        { 
+            "name": "Gestion de projet (Agile)", 
+            "level": 60 
+        },
+        { 
+            "name": "PostgreSQL/PostGIS", 
+            "level": 80 
+        },
+        { 
+            "name": "DevOps : Git, Node, Jenkins, Tuleap", 
+            "level": 50 
+        },
+        { 
+            "name": ".NET (C#), C++", 
+            "level": 100 
+        },
+        { 
+            "name": "PowerShell, Python, SQL", 
+            "level": 80 
+        },
+        { 
+            "name": "Web : ASP.NET, JavaScript", 
+            "level": 90 
+        },
+        { 
+            "name": "Infrastructure : IIS", 
+            "level": 70 
+        }
+    ],
+    "experiences": [
+        {
+          "title": "Architecte Logiciel",
+          "company": "Ministère des Armées",
+          "period": "2023 - Présent",
+          "responsibilities": [
+            "Pilotage de l'équipe de développement",
+            "Optimisation de la qualité logicielle et sécurité",
+            "Admin. avancée de plateformes web et SIG",
+            "Déploiement de systèmes résilients",
+            "Veille technologique & prototypage full-stack"
+          ]
+        },
+        {
+          "title": "Ingénieur d’étude",
+          "company": "Ministère des Armées",
+          "period": "2018 - 2022",
+          "responsibilities": [
+            "Développement full-stack",
+            "Admin. de plateforme web & SIG",
+            "Déploiement en environnements sécurisés"
+          ]
+        },
+        {
+          "title": "Ingénieur SIG",
+          "company": "ESRI France",
+          "period": "2012 - 2018",
+          "responsibilities": [
+            "Maîtrise ArcGIS / développement fullstack",
+            "Support technique & conseil",
+            "Réponses aux appels d'offres",
+            "Clients : SNCF, Veolia, Thales, SEDIF, Mairie de Paris, IAU, Intérieur"
+          ]
+        },
+        {
+          "title": "Ingénieur développement",
+          "company": "STAR APIC",
+          "period": "2008 - 2011",
+          "responsibilities": [
+            "Développement full-stack",
+            "Supervision offshore",
+            "Revues de code"
+          ]
+        }
+    ]
+  }
+  

@@ -1,0 +1,94 @@
+  <!--
+  # ==========================================================================
+  # =====    File           : index.html                                 =====
+  # =====    Author         : Flavie MORAUX (moraux.flavie@gmail.com)    =====
+  # =====    Created        : 01/05/2025                                 =====
+  # =====    Description    : CV web interactif                     	 =====
+  # =====    Version        : 1.0.0                                      =====
+  # =====    Licencs        : Tous droits réservés                       =====
+  # ==========================================================================
+  -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="MORAUX Flavie">
+  <meta name="description" content="CV web interactif">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <title id="informations-name-title"><!-- L'information sera ajoutée ici par JavaScript --></title>
+
+  <link rel="stylesheet" href="js/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+  <!-- Colonne gauche -->
+  <aside class="left">
+    <div class="section picture">
+      <!-- L'information sera ajoutée ici par JavaScript -->
+      <img id="informations-picture" src="images/picture_default.png" alt="Photo" class="profile-pic" />
+    </div>
+    <div class="section contact">
+      <p><i class="fas fa-phone"></i><a id="informations-telephone"><!-- L'information sera ajoutée ici par JavaScript --></a></p>
+      <p><i class="fas fa-envelope"></i><a id="informations-email"><!-- L'information sera ajoutée ici par JavaScript --></a></p>
+    </div>
+    <div class="section">
+      <h2>Présentation</h2>
+      <p id="informations-presentation"></p>
+    </div>
+    <div class="section">
+      <h2>Formations</h2>
+      <div class="section" id="formations-container">
+        
+      </div>
+    </div>
+    <div class="section personal-info">
+      <h2>Informations personnelles</h2>
+      <p>
+        <i class="fas fa-map-marker-alt"></i>
+        <span id="informations-city"><!-- L'information sera ajoutée ici par JavaScript --></span>
+      </p>
+      <p>
+        <i class="fas fa-calendar-alt"></i>
+        <span id="informations-birth"><!-- L'information sera ajoutée ici par JavaScript --></span>
+      </p>
+      <p>
+        <i class="fas fa-flag"></i>
+        <span id="informations-nationality"><!-- L'information sera ajoutée ici par JavaScript --></span>
+      </p>
+      <p>
+        <i class="fas fa-language"></i>
+        <span id="informations-languages"><!-- L'information sera ajoutée ici par JavaScript --></span>
+      </p>
+      <p>
+        <i class="fab fa-github"></i>
+        <a id="informations-github"><!-- L'information sera ajoutée ici par JavaScript --></a>
+      </p>
+    </div>
+  </aside>
+
+  <!-- Colonne droite -->
+  <main class="right">
+    <div class="header">
+      <h1 id="informations-name"><!-- L'information sera ajoutée ici par JavaScript --></h1>
+      <h3 id="informations-title"><!-- L'information sera ajoutée ici par JavaScript --></h3>
+    </div>
+    <div class="experience">
+      <h2>Expériences Professionnelles</h2>
+      <div class="experience-container" id="experience-container">
+        <!-- Les experiences professionnelles seront ajoutées ici par JavaScript -->
+      </div>
+    </div>
+    <div class="skills">
+      <h2>Compétences</h2>
+      <div class="skills-container" id="skills-container">
+        <!-- Les compétences seront ajoutées ici par JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
