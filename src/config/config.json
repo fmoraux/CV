@@ -9,14 +9,14 @@
     "informations":{
         "picture": "./images/picture_default.png",
         "name": "Flavie MORAUX",
-        "title": "Architecte logiciel SIG",
-        "presentation":  "Ingénieure spécialisée en SIG et développement logiciel, je combine géographie et informatique pour apporter des solutions innovantes à des projets complexes et sensibles. Ma polyvalence et mon expertise m'assurent de m'adapter aisément aux défis variés.",
+        "title": "Lead Developper SIG",
+        "presentation": "Ingénieure spécialisée en SIG et développement logiciel, avec une expertise en architecture logicielle, je combine géographie et informatique pour créer des solutions techniques efficaces pour des projets complexes et sensibles.",
         "telephone": "**.**.**.**.**",
         "email": "***",
         "city": "***",
         "birth": "***",
         "nationality": "***",
-        "languages": "Anglais intermédiaire",
+        "languages": "Anglais élémentaire (A2)",
         "github": "github.com/fmoraux"
     },
     "formations": [
@@ -38,48 +38,42 @@
     ],
     "competences": [
         { 
-            "name": "SIG : ArcGIS, QGIS, GDAL", 
-            "level": 100 
-        },
-        { 
-            "name": "Bases de données : PostgreSQL/PostGIS/SQL", 
+            "name": "SIG & Data", 
+            "details": [
+              { "name": "SIG : ArcGIS • QGIS • GDAL", "level": 100 },
+              { "name": "Bases de données : PostgreSQL • PostGIS • SQL", "level": 80 },
+              { "name": "Scripts & automatisation : Python • PowerShell", "level": 60 }
+            ],
             "level": 80 
         },
-        { 
-            "name": "Front-end Desktop .NET : C#/C++ (WinForms, WPF)", 
-            "level": 80 
-        },        
-        { 
-            "name": "Scripts & automatisation : Python, PowerShell", 
-            "level": 60 
+        {
+            "name": "Développement & API",
+            "details": [
+              { "name": "Front-end Desktop (.NET) : C#/C++ (WinForms/WPF)", "level": 80 },
+              { "name": "Front-end Web : JavaScript (Dojo)", "level": 80 },
+              { "name": "Back-end .NET : C# • Web API • REST", "level": 80 }
+            ],
+            "level": 80
         },
-        { 
-            "name": "Front-end Web : JavaScript (Dojo)", 
-            "level": 80 
-        },        
-        { 
-            "name": "Outils et DevOps : Git, Jenkins, Tuleap, IIS", 
-            "level": 60 
-        },
-        { 
-            "name": "Back-end .NET : C#, Web API", 
-            "level": 80 
-        },
-        { 
-            "name": "Gestion de projet : Agile", 
-            "level": 60 
+        {
+            "name": "Outils, DevOps & Management",
+            "details": [
+              { "name": "Outils et DevOps : Git • Jenkins • Tuleap • IIS", "level": 60 },
+              { "name": "Gestion de projet : Agile", "level": 60 }
+            ],
+            "level": 60
         }
     ],
     "experiences": [
         {
-          "title": "Architecte Logiciel",
+          "title": "Architecte logiciel",
           "company": "Ministère des Armées",
           "period": "2023 - Présent",
           "responsibilities": [
             "Pilotage de l'équipe de développement",
             "Optimisation de la qualité logicielle et sécurité",
-            "Admin. avancée de plateformes web et SIG",
-            "Déploiement de systèmes résilients",
+            "Administration de plateformes web et SIG",
+            "Déploiement en environnements sécurisés",
             "Veille technologique & prototypage full-stack"
           ]
         },
@@ -89,7 +83,7 @@
           "period": "2018 - 2022",
           "responsibilities": [
             "Développement full-stack",
-            "Admin. de plateforme web & SIG",
+            "Administration de plateforme web & SIG",
             "Déploiement en environnements sécurisés"
           ]
         },
