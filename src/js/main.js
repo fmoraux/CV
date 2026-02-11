@@ -132,8 +132,11 @@ function renderFormations(data) {
 function renderExperience(data) {
   renderListSection('experience-container', data, ({ title = '', company = '', period = '', responsibilities = [] }) => {
     const section = createElement('div', 'experience-item');
-    section.appendChild(createElement('h3', null, `${title} | ${company}`));
-    section.appendChild(createElement('p', null, period));
+
+    const sectionTitle = createElement('div', 'experience-title');
+    sectionTitle.appendChild(createElement('div', "experience-name", `${title} | ${company}`));
+    sectionTitle.appendChild(createElement('div', null, period));
+    section.appendChild(sectionTitle);
 
     const ul = document.createElement('ul');
     (responsibilities.length ? responsibilities : ["Aucune responsabilité renseignée."])
@@ -149,10 +152,25 @@ function renderExperience(data) {
  * @param {JSON} data 
  */
 function renderSkills(data) {
-  renderListSection('skills-container', data, ({ name = '', level = 0 }) => {
+  renderListSection('skills-container', data, ({ name = '', level = 0, details =  [] }) => {
     const skill = createElement('div', 'skill');
     skill.appendChild(createElement('div', 'skill-name', name));
-    skill.appendChild(createProgressBar(level));
+
+    // Affiche le détails s'il y en a un sinon le level général
+    const skillDetails = createElement('div', 'skill-details');
+    if(details && Array.isArray(details) && details.length > 0){    
+      details.forEach(detail => {
+        const skillDetail = createElement('div', 'skill-detail');
+        skillDetail.appendChild(createProgressBar( detail.level));
+        skillDetail.appendChild(createElement('div', null, detail.name));
+        skillDetails.appendChild(skillDetail);
+      });
+      
+    } else if (level !== 0){
+      skillDetails.appendChild(createProgressBar(level));
+    }
+    skill.appendChild(skillDetails);
+
     return skill;
   });
 }
